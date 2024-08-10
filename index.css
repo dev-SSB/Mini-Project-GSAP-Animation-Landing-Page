@@ -1,0 +1,191 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: white;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(12, 12, 12);
+}
+
+#nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    text-transform: uppercase;
+    padding: 0 2vw;
+
+    height: 10%;
+}
+#nav h3{
+    /* margin-top: 1vw; */
+    font-weight: 100;
+    font-size: 1.2vw;
+}
+#nav-part2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4vw;
+}
+#nav i{
+    display: none;
+}
+
+
+
+
+
+
+#center{
+    height: 80%;
+}
+#main h1{
+    /*  */
+    /* background-color: aqua; */
+    font-size: 8vw;
+    font-weight: 100;
+    text-transform: uppercase;
+    line-height: 9vw;
+    width: 70%;
+    margin-left: 7vw;
+    
+    position: relative;
+    z-index: 8;
+}
+#center h1:nth-child(1){
+    padding-top: 10vw;
+}
+#main h1:nth-child(2){
+    text-align: right;
+}
+#main h1:nth-child(3){
+    text-align: center;
+}
+
+
+img{
+    height: 22vw;
+    position: absolute;
+    left: 40%;
+    top: 25%;
+}
+#img2{
+    rotate: 10deg;
+}
+#img1{
+    rotate: 20deg;
+}
+
+
+
+
+
+
+
+#footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    text-transform: uppercase;
+    padding: 0 2vw;
+
+    height: 10%;
+
+    /* margin-top: 3vw; */
+}
+#footer-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#footer h3{
+    /* margin-top: 1vw; */
+    font-weight: 100;
+    font-size: 1.2vw;
+}
+
+
+
+
+
+
+@media (max-width:600px) {
+    #nav{
+        /*  */
+        /* background-color: aqua; */
+        height: 10%;
+        padding: 0 4vw;
+    }
+    #nav h3{
+        font-size: 5vw;
+        font-weight: 100;
+    }
+    #nav-part2{
+        display: none;
+    }
+    #nav i{
+        display: initial;
+    }
+
+
+    
+    #center{
+        height: 75%;
+    }
+    #main h1{
+        /*  */
+        /* background-color: aqua; */
+        font-size: 13vw;
+        line-height: 12vw;
+        font-weight: 100;
+        width: 95%;
+        margin-left: 1vw;
+        top: 50%;
+        padding: 0 4vw;
+
+    }
+    img{
+        height: 50%;
+        width: 80%;
+        left: 5%;
+        top: 25%;
+    }
+    #img2{
+        rotate: 10deg;
+    }
+    #img1{
+        rotate: 20deg;
+    }
+
+
+
+
+
+    
+    #footer{
+        padding: 0 4vw;
+        height: 15%;
+    }
+    #footer-center{
+        display: none;
+    }
+    #footer h3{
+
+        font-weight: 100;
+        font-size: 5vw;
+    }
+
+    
+}
